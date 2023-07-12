@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .container{
+            margin-left: 40%;
+            margin-right: 40%;
+        }
+        .countercounter{
+            text-align: center;
+        }
+        .buttons{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 25px;;
+        }
+    </style>
+</head>
+<body>
+    <h1>Counter</h1>
+    <div class="container">
+        <div class="countercounter">
+            <label>{{sessioncounter}}</label>
+        </div>
+        <div class="buttons">
+            <form action="/count">
+                <div class="click">
+                    <button>Click</button>
+                </div>
+            </form>
+            <form action="/destroy_session">
+                <div class="reset">
+                    <button>Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
